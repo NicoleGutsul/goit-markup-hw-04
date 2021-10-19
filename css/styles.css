@@ -96,11 +96,14 @@ body {
   text-align: center;
   cursor: pointer;
   border: none;
+  border-radius: 4px;
 }
 
 .button.primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button.primary:hover {
@@ -116,6 +119,8 @@ body {
 .button.secondary:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Logo */
@@ -228,6 +233,11 @@ body {
 .hero {
   padding: 200px 0;
   background-color: var(--hero-bg-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/team.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
@@ -274,6 +284,9 @@ body {
 .team-item {
   background-color: var(--primary-white-color);
   width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 4px;
 }
 
 .team-description-container {
@@ -367,6 +380,11 @@ body {
 .works-sample {
   margin: 15px;
   width: 370px;
+}
+
+.works-sample:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .works-description-container {
