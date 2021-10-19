@@ -1,0 +1,390 @@
+/* Common */
+
+:root {
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-black-color: #000000;
+  --primary-white-color: #ffffff;
+  --hero-bg-color: #2f303a;
+  --secondary-white-color: #f5f4fa;
+  --common-title-color: #212121;
+  --header-border-color: #ececec;
+  --works-border-color: #eeeeee;
+  --footer-color: #2f303a;
+  --footer-hyperlink-color: rgba(255, 255, 255, 0.6);
+
+  --logo-font-size: 26px;
+  --primary-font-size: 14px;
+  --portfolio-font-size: 16px;
+  --first-title-size: 44px;
+  --secondary-title-size: 36px;
+  --portfolio-title-size: 18px;
+  --title-line-height: 1.17;
+}
+
+body {
+  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-size: var(--primary-font-size);
+  line-height: 1.71;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.g-centered {
+  display: flex;
+  justify-content: center;
+}
+
+.v-centered {
+  display: flex;
+  align-items: center;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.img {
+  display: block;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container.footer-no-padding {
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Button */
+
+.button {
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.primary:hover {
+  color: var(--common-title-color);
+  background-color: var(--secondary-white-color);
+}
+
+.button.secondary {
+  color: var(--common-title-color);
+  background-color: var(--secondary-white-color);
+}
+
+.button.secondary:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Logo */
+
+.logo {
+  font-size: var(--logo-font-size);
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 1.19;
+}
+
+.logo.link {
+  color: var(--accent-color);
+}
+
+.logo > span {
+  color: var(--primary-black-color);
+}
+
+/* Header */
+
+.header {
+  background-color: var(--primary-white-color);
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.header-nav-link {
+  margin-left: 93px;
+}
+
+.header-contacts {
+  margin-left: auto;
+}
+
+.header-nav-link .link,
+.header-contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.header-contacts li + li,
+.header-nav-link li + li {
+  margin-left: 50px;
+}
+
+.header-nav-link .link {
+  color: var(--common-title-color);
+}
+
+.header-contacts .link {
+  letter-spacing: 0.02em;
+}
+
+.header-nav .link:hover,
+.header-nav .link:focus,
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+.header-nav-link .link.current:hover {
+  color: var(--common-title-color);
+}
+
+/* Section */
+
+.title {
+  margin: 0;
+}
+
+.benefits-title {
+  margin-bottom: 10px;
+  color: var(--common-title-color);
+  font-weight: 700;
+  font-size: var(--primary-font-size);
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--common-title-color);
+  font-weight: 700;
+  font-size: var(--secondary-title-size);
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section {
+  background-color: var(--primary-white-color);
+  margin-top: 0;
+  padding: 94px 0;
+}
+
+.section .item + .item {
+  margin-left: 30px;
+}
+
+/* Hero */
+
+.hero {
+  padding: 200px 0;
+  background-color: var(--hero-bg-color);
+  text-align: center;
+}
+
+.hero-title {
+  margin: 0 auto 30px auto;
+  width: 696px;
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: var(--first-title-size);
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero .button {
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+/* Benefits */
+
+.benefits {
+  padding-bottom: 0;
+}
+
+.benefits-item {
+  width: 270px;
+}
+
+/* Samples */
+
+.samples-item {
+  width: 370px;
+}
+/* Team */
+
+.team {
+  background-color: var(--second-white-color);
+}
+
+.team-item {
+  background-color: var(--primary-white-color);
+  width: 270px;
+}
+
+.team-description-container {
+  margin: 30px auto;
+}
+
+.team-name {
+  margin-bottom: 10px;
+  color: var(--common-title-color);
+  font-weight: 500;
+}
+
+.team-name,
+.team-role {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--footer-color);
+  padding: 60px 0;
+}
+
+.footer-address {
+  color: var(--primary-white-color);
+  font-style: normal;
+}
+
+.footer-p {
+  color: #ffffff;
+  font-weight: normal;
+  width: 231px;
+  height: 21px;
+  line-height: 24px;
+  padding-top: 9px;
+}
+
+.footer-item {
+  padding-top: 9px;
+}
+
+.footer-link {
+  color: var(--footer-hyperlink-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+.footer-logo > span {
+  color: var(--primary-white-color);
+}
+
+/* Portfolio */
+
+/* Works */
+
+.works-nav .button {
+  font-weight: 500;
+  font-size: var(--portfolio-font-size);
+  line-height: 1.63;
+}
+
+.works-nav-list {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 34px;
+}
+
+.works-nav-item {
+  align-self: flex-start;
+}
+
+.works-nav-item + .works-nav-item {
+  margin-left: 8px;
+}
+
+.works-nav .button {
+  padding: 6px 22px;
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.works-sample {
+  margin: 15px;
+  width: 370px;
+}
+
+.works-description-container {
+  padding: 20px 24px;
+  border: 1px solid var(--works-border-color);
+}
+
+.works-name {
+  margin: 0;
+  color: var(--common-title-color);
+  font-weight: 700;
+  font-size: var(--portfolio-title-size);
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works-type {
+  font-size: var(--portfolio-font-size);
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
