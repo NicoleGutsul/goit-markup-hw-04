@@ -22,22 +22,24 @@
         <a class="link logo" href="./">
           Web<span>Studio</span>
         </a>
-        <ul class="header-nav-link v-centered list">
-          <li><a class="link" href="./index.html">Студия</a></li>
-          <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="">Контакты</a></li>
+        <ul class="header-nav-list v-centered list">
+          <li><a class="link header-nav-link" href="./index.html">Студия</a></li>
+          <li><a class="link header-nav-link current" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="link header-nav-link" href="">Контакты</a></li>
         </ul>
         <ul class="header-contacts v-centered list">
-          <li>
-          <svg>
-            <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use>
-          </svg>
-            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li>
-          <svg>
-            <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
-          </svg>
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="centered">
+            <a class="link contacts-link" href="mailto:info@devstudio.com"><svg class="icon" width="16"
+                height="12">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use>
+              </svg> <span> info@devstudio.com</span></a>
+          </li>
+          <li class="centered">
+    
+            <a class="link contacts-link" href="tel:+380961111111"><svg class="icon" width="10" height="16">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
+              </svg><span>+38 096 111 11 11</span></a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -169,9 +171,9 @@
   </main>
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-no-padding container v-centered">
+    <div class="container v-centered">
       <div class="footer-block">
-        <a class="link footer-logo logo" href="./">
+        <a class="footer-logo logo link" href="./">
           Web<span>Studio</span>
         </a>
         <address class="footer-address">
@@ -184,20 +186,23 @@
             <li class="footer-item"><a class="link footer-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </address>
-              <ul>
-                <li><svg>
-                    <use href="./images/icons.svg/symbol-defs.svg#icon-instagram"></use>
-                  </svg></li>
-                <li><svg>
-                    <use href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
-                  </svg></li>
-                <li><svg>
-                    <use href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
-                  </svg></li>
-                <li><svg>
-                    <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
-                  </svg></li>
-              </ul>
+      </div>
+      <div class="social-block">
+        <h3 class="title-social">Присоединяйтесь</h3>
+        <ul class="list g-centered">
+          <li class="item-social"><a class="link link-social centered" href=""><svg class="icon" width="20" height="20">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-instagram"></use>
+              </svg></a></li>
+          <li class="item-social"><a class="link link-social centered" href=""><svg class="icon" width="20" height="20">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
+              </svg></a></li>
+          <li class="item-social"><a class="link link-social centered" href=""><svg class="icon" width="20" height="20">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
+              </svg></a></li>
+          <li class="item-social"><a class="link link-social centered" href=""><svg class="icon" width="20" height="20">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
+              </svg></a></li>
+        </ul>
       </div>
     </div>
   </footer>
