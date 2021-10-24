@@ -191,17 +191,20 @@ h6 {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  font-weight: 500;
+  font-style: inherit;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .header-nav-link {
   color: var(--common-title-color);
+  font-weight: inherit;
+  font-weight: bolder;
 }
 
 .header-contacts {
   margin-left: auto;
+  font-weight: 500;
 }
 
 .header-nav-link.current:hover,
